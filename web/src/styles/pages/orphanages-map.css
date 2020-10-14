@@ -44,8 +44,15 @@
   font-weight: 800;
 }
 
+#page-map .leaflet-container {
+  /* Div que fica de volta do mapa */
+  z-index: 5;
+}
+
 #page-map .create-orphanage {
+  /* Estilização do Mapa */
   position: absolute;
+  z-index: 10;
 
   right: 40px;
   bottom: 40px;

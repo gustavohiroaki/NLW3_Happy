@@ -1,0 +1,100 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-landing .content-wrapper {
+  /* Position Relative utilizado para quando adicionar algo "absoluto", este elemento ficar relativo a partir deste */
+  position: relative;
+
+  /* Definir 100% de largura, porém com máximo de 1100px */
+  width: 100%;
+  max-width: 1100px;
+
+  /* Definir 100% de altura, porém com máximo de 680px */
+  height: 100%;
+  max-height: 680px;
+
+  /* Alinhar os items a partir de cima do container, em coluna, espaçados igualmente entre eles
+  */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Background url para definir o local, no-repeat para não repetir diversas vezes, depois posicionamento x e y */
+  background: url("../../Images/Landing.svg") no-repeat 80% center;
+}
+
+#page-landing .content-wrapper main {
+  /* Definir a estilização do slogan do app */
+  max-width: 350px;
+}
+
+#page-landing .content-wrapper main h1 {
+  /* Definir a estilização do título do slogan do app */
+  font-size: 76px;
+  font-weight: 900;
+  line-height: 70px;
+}
+
+#page-landing .content-wrapper main p {
+  /* Definir a estilização do paragrafo do slogan do app */
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.content-wrapper .location {
+  /* Relativo ao content-wrapper */
+  position: absolute;
+
+  /* 0px na direita de cima */
+  top: 0;
+  right: 0;
+
+  font-size: 24px;
+  line-height: 34px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+}
+
+.content-wrapper .location {
+  /* Definir espessura da fonte */
+  font-weight: 800;
+}
+
+.content-wrapper .enter-app {
+  /* Relativo ao content-wrapper */
+  position: absolute;
+
+  /* 0px na direita de baixo */
+  bottom: 0;
+  right: 0;
+
+  width: 80px;
+  height: 80px;
+
+  background: #ffd666;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Fazer a transição do background-color em 0.2s */
+  transition: background-color 0.2s;
+}
+
+.content-wrapper .enter-app:hover {
+  /* Transição quando colocar o mouse em cima */
+  background: #96feff;
+}

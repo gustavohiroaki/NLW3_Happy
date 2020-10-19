@@ -48,6 +48,7 @@ export default {
       return { path: image.filename };
     });
 
+    // open_on_weekends convertendo para booleano
     const data = {
       name,
       latitude,
@@ -55,7 +56,7 @@ export default {
       about,
       instructions,
       opening_hours,
-      open_on_weekends,
+      open_on_weekends: open_on_weekends === "true",
       images,
     };
 
